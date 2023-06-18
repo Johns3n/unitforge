@@ -2,7 +2,7 @@ name: lint, test & build UnitForge© on pull-request
 on:
     pull_request:
 jobs:
-    lint-test-and-build-unitforge:
+    run-steps:
       runs-on: ubuntu-latest
       steps:
         - name: Checkout
