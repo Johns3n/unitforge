@@ -1,0 +1,20 @@
+name: lint, test & build UnitForge© on pull-request
+on:
+    pull_request:
+jobs:
+    lint-test-and-build-unitforge:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        - name: Use Node.js
+          uses: actions/setup-node@v3
+          with:
+            node-version: '18.x'
+        - name: Install UnitForge© dependencies
+          run: yarn install --frozen-lockfile
+        - name: Lint UnitForge©
+          run: yarn lint
+        - name: Test UnitForge©
+          run: yarn vitest run
+        - name: Build UnitForge©
+          run: yarn build
