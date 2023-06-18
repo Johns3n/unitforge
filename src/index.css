@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+  @font-face {
+    font-family: 'Brand';
+    src: url('/fonts/Brand-Light.woff') format('woff2'),
+        url('/fonts/Brand-Light.woff2') format('woff');
+    font-weight: light;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Brand';
+    src: url('/fonts/Brand-LightItalic.woff') format('woff2'),
+         url('/fonts/Brand-LightItalic.woff2') format('woff');
+    font-weight: light;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Brand';
+    src: url('/fonts/Brand-Regular.woff') format('woff2'),
+         url('/fonts/Brand-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Brand';
+    src: url('/fonts/Brand-Bold.woff') format('woff2'),
+        url('/fonts/Brand-Bold.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Brand';
+    src: url('/fonts/Brand-BoldItalic.woff') format('woff2'),
+        url('/fonts/Brand-BoldItalic.woff2') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Brand';
+    src: url('/fonts/Brand-ExtraBlack.woff') format('woff2'),
+            url('/fonts/Brand-ExtraBlack.woff2') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+    font-display: swap;
+  }
+}
